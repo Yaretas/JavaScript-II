@@ -27,14 +27,14 @@ const items = ['Pencil', 'Notebook', 'yo-yo', 'Gum'];
 
 function getLength(arr, cb) {
   // getLength passes the length of the array into the callback.
+  cb();
+};
+
 function tedy(){
   for(i = 0; i < items.length; i ++){
     console.log(items[i]);
   };
-}
-  return tedy();
-
-}
+};
 getLength(items, tedy);
 
 function last(arr, cb) {
