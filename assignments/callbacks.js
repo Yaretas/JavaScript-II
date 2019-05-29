@@ -27,22 +27,26 @@ const items = ['Pencil', 'Notebook', 'yo-yo', 'Gum'];
 
 function getLength(arr, cb) {
   // getLength passes the length of the array into the callback.
-  cb();
+  cb(arr);
 };
 
 function tedy(){
-  for(i = 0; i < items.length; i ++){
-    console.log(items[i]);
+  for(i = 0; i < arr.length; i ++){
+    console.log(arr[i]);
   };
 };
 getLength(items, tedy);
 
 function last(arr, cb) {
   // last passes the last item of the array into the callback.
-
-
-
+cb();
 }
+
+function lastArr() {
+  return items.length[-1];
+};
+
+last(items, lastArr);
 
 function sumNums(x, y, cb) {
   // sumNums adds two numbers (x, y) and passes the result to the callback.
